@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { CartComponent } from './component/cart/cart/cart.component';
 import { HeaderComponent } from './component/header/header/header.component';
 import { ProductsComponent } from './component/products/products/products.component';
-import { PipePipe } from './pipe/pipe.pipe';
+import { FilterPipe } from './pipe/pipe.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
     CartComponent,
     HeaderComponent,
     ProductsComponent,
-    PipePipe,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

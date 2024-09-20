@@ -22,5 +22,6 @@ export class HeaderComponent implements OnInit {
     const target = event.target as HTMLInputElement;
     this.searchTerm = target.value;
     console.log('Searching for:', this.searchTerm);
+    this.cartService.setSearchTerm(this.searchTerm); // Emit the search term to service
   }
 }

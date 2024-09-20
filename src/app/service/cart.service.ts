@@ -44,4 +44,8 @@ export class CartService {
     this.cartItemList = []
     this.productList.next(this.cartItemList);
   }
+
+  setSearchTerm(searchTerm: string) {
+    this.search.next(searchTerm); // Emit search term to subscribers
+  }
 }
